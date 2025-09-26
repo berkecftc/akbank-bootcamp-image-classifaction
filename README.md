@@ -29,7 +29,6 @@ Geliştirilen ve optimize edilen CNN modeli, daha önce görmediği 3000 görün
 Eğitim öncesinde yapılan Keşifsel Veri Analizi (EDA) sonucunda, 6 sınıfın da (`buildings`, `forest`, `glacier`, `mountain`, `sea`, `street`) yaklaşık olarak dengeli bir dağılıma sahip olduğu görülmüştür. Bu durum, modelin eğitimi için sağlıklı bir başlangıç noktası sağlamıştır.
 
 
-*Veri Setinden Rastgele Örnek Görüntüler:*
 
 ### Eğitim Süreci Grafikleri
 Modelin öğrenme süreci incelendiğinde, doğrulama doğruluğunun (validation accuracy) eğitim doğruluğuna paralel bir artış göstermesi, modelde ciddi bir **ezberleme (overfitting) sorunu olmadığını** ve modelin genelleme yeteneğinin iyi olduğunu göstermektedir. Doğrulama kaybının (validation loss) istikrarlı bir şekilde düşmesi de bu bulguyu desteklemektedir.
