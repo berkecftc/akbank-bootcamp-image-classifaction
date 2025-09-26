@@ -28,20 +28,20 @@ Geliştirilen ve optimize edilen CNN modeli, daha önce görmediği 3000 görün
 ### Veri Seti Analizi
 Eğitim öncesinde yapılan Keşifsel Veri Analizi (EDA) sonucunda, 6 sınıfın da (`buildings`, `forest`, `glacier`, `mountain`, `sea`, `street`) yaklaşık olarak dengeli bir dağılıma sahip olduğu görülmüştür. Bu durum, modelin eğitimi için sağlıklı bir başlangıç noktası sağlamıştır.
 
-(sinif-dagilimi.png)
+(sınıf-dağılımı.png)
 
 *Veri Setinden Rastgele Örnek Görüntüler:*
-(rastgele-gorsel.png)
+(rastgele-görsel.png)
 
 ### Eğitim Süreci Grafikleri
 Modelin öğrenme süreci incelendiğinde, doğrulama doğruluğunun (validation accuracy) eğitim doğruluğuna paralel bir artış göstermesi, modelde ciddi bir **ezberleme (overfitting) sorunu olmadığını** ve modelin genelleme yeteneğinin iyi olduğunu göstermektedir. Doğrulama kaybının (validation loss) istikrarlı bir şekilde düşmesi de bu bulguyu desteklemektedir.
 
-(dogruluk-grafikleri.png)
+(doğruluk-grafikleri.png)
 
 ### Sınıf Bazında Performans
 Sınıflandırma raporu, modelin sınıf bazındaki performansını detaylı olarak göstermektedir. Modelin, `f1-score` metriğine göre en yüksek başarıyı **%97** ile **'forest' (orman)** sınıfında gösterdiği görülmektedir. En çok zorlandığı sınıflar ise **'glacier' (buzul)** ve **'mountain' (dağ)** olmuştur; bu sınıflardaki `recall` değerlerinin **%77** olması, modelin bu sınıflara ait görüntülerin bir kısmını kaçırdığını göstermektedir. Karmaşıklık matrisi de bu bulguyu desteklemekte ve modelin özellikle bu iki sınıfı birbiriyle karıştırdığını doğrulamaktadır.
 
-(karmasiklik-matrisi.png)
+(karmaşıklık-matrisi.png)
 
 ### Sınıflandırma Raporu (Classification Report)
 
@@ -58,8 +58,9 @@ Sınıflandırma raporu, modelin sınıf bazındaki performansını detaylı ola
 ### Model Yorumlama: Aktivasyon Haritaları
 Modelin karar mekanizmasını şeffaf hale getirmek için katman aktivasyon haritaları incelenmiştir. Bu analiz, modelin bir görüntüyü sınıflandırırken doğru ve anlamlı bölgelere odaklandığını göstermiştir. Örneğin, bir dağ görüntüsü analiz edildiğinde, ilk katmanların (`conv2d`) genel hatları ve dokuları yakaladığı, daha derin katmanların (`conv2d_1`, `conv2d_2`) ise kayalıkların kenarları ve kar birikintileri gibi daha belirgin ve karmaşık desenlere odaklandığı görsel olarak kanıtlanmıştır.
 
-*(Buraya en açıklayıcı bulduğunuz aktivasyon haritası görselini ekleyin, örneğin `conv2d_2.png`)*
 (conv2d_2.png)
+(conv2d_1.png)
+(conv2d.png)
 
 
 ## 💡 Sonuç ve Gelecek Çalışmalar
