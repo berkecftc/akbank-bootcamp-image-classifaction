@@ -69,4 +69,4 @@ Projenin gelecekte daha da ileriye taşınması için aşağıdaki adımlar hede
 
 Projenin tüm kodlarını ve adımlarını içeren Kaggle Notebook'una aşağıdaki linkten ulaşabilirsiniz:
 
-**[Proje Notebook'u](https://www.kaggle.com/code/berkecftc/fork-of-akbank-bootcamp-image-classifaction))
+**[Proje Notebook'u](https://www.kaggle.com/code/berkecftc/fork-of-akbank-bootcamp-image-classifaction)
